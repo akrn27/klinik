@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>Proyek2Klinik.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">JaCoCoverage analysis of project &quot;Proyek2Klinik&quot; (powered by JaCoCo from EclEmma)</a> &gt; <a href="index.source.html" class="el_package">proyek2klinik</a> &gt; <span class="el_source">Proyek2Klinik.java</span></div><h1>Proyek2Klinik.java</h1><pre class="source lang-java linenums">package proyek2klinik;
+
+import java.util.Scanner;
+<span class="nc" id="L4">public class Proyek2Klinik {</span>
+    
+    public static void main(String[] args) {
+        //1. Klinik Buka
+<span class="nc" id="L8">        System.out.println(&quot;Selamat Datang Di Klinik Kelompok 9&quot;);</span>
+        
+<span class="nc" id="L10">        System.out.println(&quot;------------------------------------&quot;);</span>
+        boolean buka;
+<span class="nc" id="L12">        Scanner sc = new Scanner(System.in);</span>
+<span class="nc" id="L13">        Klinik obj1 = new Klinik();</span>
+        
+<span class="nc" id="L15">        System.out.print(&quot;Apakah Klinik Buka[true/false]? &quot;);</span>
+<span class="nc" id="L16">        buka = sc.nextBoolean();</span>
+<span class="nc" id="L17">        obj1.bukaa(buka);</span>
+        
+        
+        //2. Pasien Nama, Umur dan Bpjs
+<span class="nc" id="L21">        System.out.println(&quot;------------------------------------&quot;);</span>
+        String nama;
+        int umur;
+        boolean bpjs;
+<span class="nc" id="L25">        Pasien obj2 = new Pasien();</span>
+<span class="nc" id="L26">        Scanner sc2 = new Scanner(System.in);</span>
+        
+<span class="nc" id="L28">        System.out.print(&quot;Input Nama Anda: &quot;);</span>
+<span class="nc" id="L29">        nama = sc2.nextLine();</span>
+        
+<span class="nc" id="L31">        System.out.print(&quot;Input Umur Anda: &quot;);</span>
+<span class="nc" id="L32">        umur = sc2.nextInt();</span>
+        
+<span class="nc" id="L34">        System.out.print(&quot;Apakah Anda Menggunakan BPJS[true/false]: &quot;);</span>
+<span class="nc" id="L35">        bpjs = sc2.nextBoolean();</span>
+        
+        
+        //3. Dokter doctor dan absen
+<span class="nc" id="L39">        System.out.println(&quot;------------------------------------&quot;);</span>
+        int doctor;
+        boolean absen;
+<span class="nc" id="L42">        Dokter obj3 = new Dokter();</span>
+<span class="nc" id="L43">        Scanner sc3 = new Scanner(System.in);</span>
+        
+<span class="nc" id="L45">        System.out.print(&quot;Dokter Anda[1,2,3]: &quot;);</span>
+<span class="nc" id="L46">        doctor = sc3.nextInt();</span>
+        
+<span class="nc" id="L48">        System.out.print(&quot;Absen Dokter[true/false]? &quot;);</span>
+<span class="nc" id="L49">        absen = sc3.nextBoolean();</span>
+        
+        
+        //DATA PASIEN
+<span class="nc" id="L53">        System.out.println(&quot;------------------------------------&quot;);</span>
+<span class="nc" id="L54">        System.out.println(&quot;\nDATA PASIEN: &quot;);</span>
+<span class="nc" id="L55">        System.out.println(&quot;Nama        : &quot;+nama);</span>
+<span class="nc" id="L56">        System.out.print(&quot;Usia        : &quot;);</span>
+<span class="nc" id="L57">        obj2.umurr(umur);</span>
+<span class="nc" id="L58">        System.out.print(&quot;Bpjs        : &quot;);</span>
+<span class="nc" id="L59">        obj2.bpjss(bpjs);</span>
+<span class="nc" id="L60">        System.out.print(&quot;Dokter      : &quot;);</span>
+<span class="nc" id="L61">        obj3.doctorr(doctor);</span>
+<span class="nc" id="L62">        System.out.print(&quot;Absen Dokter: &quot;);</span>
+<span class="nc" id="L63">        obj3.absenn(absen);</span>
+<span class="nc" id="L64">        System.out.println(&quot;Note! Usia Berdasarkan Kategori Umur WHO&quot;);</span>
+        
+        
+<span class="nc" id="L67">    }</span>
+    
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.6.201602180812</span></div></body></html>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>Apoteker.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">JaCoCoverage analysis of project &quot;Proyek2Klinik&quot; (powered by JaCoCo from EclEmma)</a> &gt; <a href="index.source.html" class="el_package">proyek2klinik</a> &gt; <span class="el_source">Apoteker.java</span></div><h1>Apoteker.java</h1><pre class="source lang-java linenums">package proyek2klinik;
+
+<span class="fc" id="L3">public class Apoteker {</span>
+
+//1. Method JenisObat
+    public String jenisObatt(String jenisObat){
+<span class="nc" id="L7">        String jenisObats[] = {&quot;ObatDiare&quot;,&quot;Paracetamol&quot;,&quot;Tramadol&quot;,&quot;Crestor&quot;,&quot;Lipitor&quot;};</span>
+<span class="nc" id="L8">        return jenisObat;</span>
+    }
+    
+    //2. Method IjinObat
+    public boolean ijinObatt(boolean ijinObat, boolean absen){
+<span class="fc" id="L13">        Dokter obj = new Dokter();</span>
+<span class="pc bpc" id="L14" title="1 of 2 branches missed.">        if(ijinObat != obj.absenn(absen)){</span>
+<span class="nc" id="L15">            System.out.println(&quot;Obat Boleh Diambil&quot;);</span>
+        }else{
+<span class="fc" id="L17">            System.out.println(&quot;Obat Belum Boleh Diambil&quot;);</span>
+<span class="fc" id="L18">        }return ijinObat;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.6.201602180812</span></div></body></html>
