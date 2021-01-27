@@ -62,6 +62,7 @@ public class Proyek2Klinik {
         System.out.print("Absen Dokter: ");
         obj3.absenn(absen);
         System.out.println("Note! Usia Berdasarkan Kategori Umur WHO");
+        System.out.println("Hello World");
         
         
     }
