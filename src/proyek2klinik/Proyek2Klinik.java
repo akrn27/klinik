@@ -4,6 +4,8 @@ import java.util.Scanner;
 public class Proyek2Klinik {
     
     public static void main(String[] args) {
+        
+        System.out.println("Hello World");
         //1. Klinik Buka
         System.out.println("Selamat Datang Di Klinik Kelompok 9");
         
